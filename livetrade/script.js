@@ -1,5 +1,5 @@
 // Script do Countdown - Contador regressivo
-const dataAlvo = new Date('2026-06-18T18:30:00-03:00');
+const dataAlvo = new Date('2026-08-13T18:30:00-03:00');
 let intervaloContagem;
 
 function atualizarContagem() {

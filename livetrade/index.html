@@ -6,20 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenner - Live Comercial</title>
 
-    <!-- Importando fonte Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300&display=swap"
         rel="stylesheet">
 
-    <!-- Estilos separados -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Configuração de cores personalizadas do Tailwind -->
     <script>
         tailwind.config = {
             theme: {
@@ -42,27 +38,22 @@
         }
     </script>
 
-    <!-- Script separado -->
     <script src="script.js" defer></script>
 </head>
 
 <body class="min-h-screen flex flex-col relative overflow-x-hidden bg-zinc-900 text-white">
 
-    <!-- SEC 1: Barra do Logo -->
-    <header class="hidden md:block w-full py-2 bg-brand-dark z-50 relative border-b border-zinc-800">
+    <header class="hidden md:block w-full py-1 bg-brand-dark z-50 relative border-b border-zinc-800">
         <div class="max-w-[1024px] mx-auto flex justify-center items-center px-4 lg:px-8">
-            <img src="img/logotipoKENNER-04.png" alt="Logo Kenner" class="h-6 md:h-8 w-auto object-contain">
+            <img src="img/logotipoKENNER-04.png" alt="Logo Kenner" class="h-5 md:h-6 w-auto object-contain">
         </div>
     </header>
 
-    <!-- SEC 2: Barra do Contador -->
     <div
         class="w-full bg-brand-orange text-white px-2 md:px-4 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6 sticky top-0 z-[60] transition-all duration-300 py-3 md:py-2 md:min-h-[54px]">
 
-        <!-- Label FALTAM -->
         <span id="rotulo-contagem" class="hidden md:inline text-xs md:text-sm font-medium tracking-wide">FALTAM</span>
 
-        <!-- Countdown -->
         <div class="flex items-center gap-1 md:gap-3 text-center h-full">
             <div class="flex flex-col items-center justify-center">
                 <div class="bg-black/20 text-white text-lg md:text-xl font-semibold py-0.5 px-2 rounded min-w-[38px] md:min-w-[45px] leading-tight"
@@ -93,156 +84,153 @@
             </div>
         </div>
 
-        <!-- Divider -->
         <div class="hidden md:block w-px h-6 bg-white/30"></div>
 
-        <!-- Data do Evento -->
         <span class="hidden md:inline text-xs md:text-sm font-black uppercase tracking-wider text-center">
-            DIA 18/06 - ÀS 18H30
+            DIA 13/08 - ÀS 18H30
             <span class="text-[0.55rem] md:text-[0.65rem] font-bold">(HORÁRIO DE BRASÍLIA)</span>
         </span>
     </div>
 
-    <!-- Container Principal -->
-    <main id="conteudo-principal"
-        class="w-full flex-grow flex items-start justify-center md:items-center md:justify-start px-6 pt-10 pb-[350px] md:pt-16 md:pb-16 md:px-[8%] lg:px-[12%] xl:px-[15%] relative bg-[url('img/9847019382740094817.png')] md:bg-[url('img/9487123098471039847.png')] bg-no-repeat bg-bottom md:bg-right bg-cover">
+    <div id="fundo-principal" class="w-full flex-grow relative overflow-hidden">
 
-        <!-- Wrapper do Conteúdo -->
-        <div
-            class="w-full max-w-[480px] md:max-w-[640px] flex flex-col items-center text-center md:items-start md:text-left relative z-10 gap-6">
+        <main id="conteudo-principal"
+            class="w-full flex flex-col items-center justify-start relative z-10">
 
-            <!-- Logo Kenner -->
-            <img src="img/logotipoKENNER-04.png" alt="Kenner" class="h-8 md:h-12 object-contain"
-                style="min-width: 140px;">
+            <div id="bloco-conteudo"
+                class="w-full flex flex-col items-center text-center relative z-10 px-[5%] pt-[2rem] pb-[1.5rem]">
 
-            <!-- Título -->
-            <h1 class="text-5xl md:text-6xl lg:text-[72px] font-black tracking-tight leading-none uppercase text-white">
-                Live Comercial
-            </h1>
+                <img src="img/logotipoKENNER-04.png" alt="Kenner"
+                    class="h-[2rem] object-contain mb-[1rem]"
+                    style="max-width: 100%;">
 
-            <!-- Data e Hora -->
-            <div class="flex items-center gap-3">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    class="text-brand-orange w-6 h-6 md:w-8 md:h-8 shrink-0">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-                <div class="text-xl md:text-[28px] tracking-tight text-white flex items-baseline gap-2">
-                    <span class="font-bold">18 de Junho</span>
-                    <span class="font-light italic text-gray-300">18:30h BRT</span>
+                <h1 class="text-[clamp(2.5rem,8vw,4.5rem)] font-black tracking-tight leading-none uppercase text-white">
+                    Live Comercial
+                </h1>
+
+                <div class="flex items-center gap-[0.75rem] mt-[1rem]">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        class="text-brand-orange shrink-0" style="width: clamp(1.25rem, 3vw, 2rem); height: clamp(1.25rem, 3vw, 2rem);">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <div class="text-[clamp(1.1rem,3vw,1.75rem)] tracking-tight text-white flex items-baseline gap-[0.5rem]">
+                        <span class="font-bold">13 de Agosto</span>
+                        <span class="font-light italic text-gray-300">18:30h BRT</span>
+                    </div>
                 </div>
+
+                <a href="https://www.youtube.com" target="_blank"
+                    class="w-full border border-zinc-500 hover:border-brand-orange transition-colors duration-300 rounded-lg px-[1.25rem] py-[0.75rem] flex items-center justify-center gap-[0.75rem] group mt-[1rem]"
+                    style="max-width: 28rem;">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="text-brand-orange w-6 h-6 shrink-0">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                    <span class="text-[0.8125rem] font-bold tracking-wide text-white">
+                        AO VIVO NO YOUTUBE | <span class="text-brand-orange">CLIQUE AQUI</span>
+                    </span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        class="text-gray-300 group-hover:text-white transition-colors shrink-0">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+
+                <p class="text-[clamp(0.8rem,2vw,1rem)] text-gray-200 leading-relaxed font-medium mt-[0.75rem]"
+                    style="max-width: 30rem;">
+                    Confira as novidades da coleção Verão 26, que irão movimentar o final do ano e aproveite
+                    benefícios <span class="text-brand-orange font-bold">exclusivos</span> oferecidos somente para os
+                    participantes da live.
+                </p>
+
+                <div class="w-full flex flex-col items-center gap-[0.75rem] mt-[0.75rem]" style="max-width: 30rem;">
+                    <h3 class="text-brand-orange text-[0.6875rem] font-bold tracking-[0.4em] uppercase">
+                        P R O G R A M A Ç Ã O
+                    </h3>
+
+                    <div
+                        class="w-full border border-zinc-500 rounded-2xl py-[0.875rem] px-[1.25rem] grid grid-cols-2 gap-[0.75rem]">
+
+                        <div class="flex items-center gap-[0.5rem]">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="text-brand-orange w-5 h-5 shrink-0">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                            </svg>
+                            <span class="text-[0.625rem] text-white leading-tight font-medium">Abertura</span>
+                        </div>
+
+                        <div class="flex items-center gap-[0.5rem]">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="text-brand-orange w-5 h-5 shrink-0">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg>
+                            <span class="text-[0.625rem] text-white leading-tight font-medium">Destaques<br>da
+                                coleção</span>
+                        </div>
+
+                        <div class="flex items-center gap-[0.5rem]">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="text-brand-orange w-5 h-5 shrink-0">
+                                <path d="M3 3v18h18"></path>
+                                <path d="m19 9-5 5-4-4-3 3"></path>
+                                <path d="M19 9h-4"></path>
+                                <path d="M19 9v4"></path>
+                            </svg>
+                            <span
+                                class="text-[0.625rem] text-white leading-tight font-medium">Oportunidades<br>comerciais</span>
+                        </div>
+
+                        <div class="flex items-center gap-[0.5rem]">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="text-brand-orange w-5 h-5 shrink-0">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span class="text-[0.625rem] text-white leading-tight font-medium">Momento<br>de
+                                interação</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="https://forms.cloud.microsoft/r/C93CjNK1ns" target="_blank"
+                    class="w-full bg-brand-orange hover:bg-[#d8400a] text-white font-extrabold py-[1rem] px-[2rem] rounded-full transition-colors duration-300 text-[0.8125rem] tracking-wide text-center shadow-lg mt-[0.75rem]"
+                    style="max-width: 28rem;">
+                    CLIQUE AQUI E FAÇA SEU CADASTRO
+                </a>
+
+                <p class="text-[0.625rem] text-gray-300 leading-snug font-medium mt-[0.5rem]"
+                    style="max-width: 24rem;">
+                    Garanta seu acesso e aproveite vantagens especiais<br> disponíveis somente para os participantes da
+                    live.
+                </p>
+
             </div>
 
-            <!-- Botão YouTube -->
-            <a href="https://youtube.com/live/0lmx8laqotw?feature=share" target="_blank"
-                class="w-full md:w-auto border border-zinc-500 hover:border-brand-orange transition-colors duration-300 rounded-lg px-5 py-3 flex items-center justify-center md:justify-start gap-3 group">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="text-brand-orange w-6 h-6 shrink-0">
-                    <path
-                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                </svg>
-                <span class="text-[13px] md:text-sm font-bold tracking-wide text-white">
-                    AO VIVO NO YOUTUBE | <span class="text-brand-orange">CLIQUE AQUI</span>
-                </span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    class="text-gray-300 group-hover:text-white transition-colors shrink-0">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-            </a>
-
-            <!-- Parágrafo Descritivo -->
-            <p class="text-[14px] md:text-[16px] text-gray-200 leading-relaxed md:max-w-[480px] font-medium">
-                Confira as novidades da coleção Primavera 26, antecipe as oportunidades do próximo trimestre e aproveite
-                benefícios <span class="text-brand-orange font-bold">exclusivos</span> preparados para quem estiver
-                com a gente na live.
-            </p>
-
-            <!-- Seção Programação -->
-            <div class="w-full flex flex-col items-center md:items-start gap-3">
-                <h3 class="text-brand-orange text-[11px] md:text-sm font-bold tracking-[0.4em] uppercase">
-                    P R O G R A M A Ç Ã O
-                </h3>
-
-                <!-- Container da Programação (grid 2x2 mobile, 4 colunas desktop) -->
-                <div
-                    class="w-full border border-zinc-500 rounded-2xl py-4 px-5 md:py-4 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-
-                    <!-- Item 1: Abertura -->
-                    <div class="flex items-center gap-2">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-brand-orange w-5 h-5 shrink-0">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                        </svg>
-                        <span class="text-[10px] md:text-xs text-white leading-tight font-medium">Abertura</span>
-                    </div>
-
-                    <!-- Item 2: Destaques da coleção -->
-                    <div class="flex items-center gap-2">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-brand-orange w-5 h-5 shrink-0">
-                            <polygon
-                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                            </polygon>
-                        </svg>
-                        <span class="text-[10px] md:text-xs text-white leading-tight font-medium">Destaques<br>da
-                            coleção</span>
-                    </div>
-
-                    <!-- Item 3: Oportunidades comerciais -->
-                    <div class="flex items-center gap-2">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-brand-orange w-5 h-5 shrink-0">
-                            <path d="M3 3v18h18"></path>
-                            <path d="m19 9-5 5-4-4-3 3"></path>
-                            <path d="M19 9h-4"></path>
-                            <path d="M19 9v4"></path>
-                        </svg>
-                        <span
-                            class="text-[10px] md:text-xs text-white leading-tight font-medium">Oportunidades<br>comerciais</span>
-                    </div>
-
-                    <!-- Item 4: Momento de interação -->
-                    <div class="flex items-center gap-2">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-brand-orange w-5 h-5 shrink-0">
-                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <span class="text-[10px] md:text-xs text-white leading-tight font-medium">Momento<br>de
-                            interação</span>
-                    </div>
-
-                </div>
+            <div id="area-sandalia" class="w-full relative flex items-center justify-center">
+                <img id="imagem-sandalia" src="img/987409187320.png" alt="Sandália Kenner"
+                    class="object-contain relative z-10" style="max-width: 150%;">
             </div>
 
-            <!-- Botão Cadastro -->
-            <a href="https://forms.cloud.microsoft/r/7fzSMRE2PF" target="_blank"
-                class="w-full md:w-auto bg-brand-orange hover:bg-[#d8400a] text-white font-extrabold py-4 md:py-5 px-8 md:px-12 rounded-full transition-colors duration-300 text-[13px] md:text-[15px] tracking-wide text-center shadow-lg">
-                CLIQUE AQUI E FAÇA SEU CADASTRO
-            </a>
+        </main>
 
-            <!-- Rodapé pequeno -->
-            <p class="text-[10px] md:text-[12px] text-gray-300 md:max-w-full leading-snug font-medium">
-                Garanta seu acesso e aproveite vantagens especiais<br> disponíveis somente para os participantes da
-                live.
-            </p>
+    </div>
 
-        </div>
-    </main>
-
-    <!-- FOOTER FINAL -->
-    <footer class="w-full bg-brand-dark text-gray-400 py-6 border-t border-zinc-800 z-50 relative">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <footer class="w-full bg-brand-dark text-gray-400 py-[10px] border-t border-zinc-800 z-50 relative">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-2">
             <img src="img/logotipoKENNER-04.png" alt="Logo Kenner"
                 class="hidden md:block h-5 md:h-6 w-auto object-contain">
             <div class="text-xs md:text-sm text-center md:text-left font-light tracking-wide">
